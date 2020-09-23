@@ -39,17 +39,17 @@ queued after this command.<br>
                engine.say(audio)
                engine.runAndWait()
 
-<br>It is an user defined function. The pyttsx3 function say() pronounces the actual audio.<br>
+It is an user defined function. The pyttsx3 function say() pronounces the actual audio.<br>
 The runAndWait() function blocks while processing all currently queued commands. <br>
 Invokes callbacks for engine notifications appropriately. <br>
 Returns when all commands queued before this call are emptied from the queue.<br>
   
          remember = open('input.txt','r')
 
-<br>Here our text file is opened and stored in 'remember'<br>
+Here our text file is opened and stored in 'remember'<br>
 
          speak(remember.read())
 
- <br>Now finally we call our function.
+ Now finally we call our function.
 
 
