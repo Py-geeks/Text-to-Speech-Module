@@ -16,8 +16,8 @@ PS: OS library should be available before hand with python distribution.
 
 ### Import Libraries
 
-- import pyttsx3
-- import os
+         import pyttsx3
+         import os
 
 ### Lets dive into the code
 
