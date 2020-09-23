@@ -46,5 +46,4 @@ Here our text file is opened and stored in 'remember'
          speak(remember.read())
 Now finally we call our function.
 
-For the link to complete code and file click the link:
-<a href="https://github.com/Py-geeks/Text-to-Speech-Module">Text-to-Speech-Module</a>
+
