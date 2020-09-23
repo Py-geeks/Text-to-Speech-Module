@@ -1,0 +1,50 @@
+## Password-generator
+
+### Pre-requisites
+
+- pyttsx3 is a text-to-speech conversion library in Python.
+  Unlike alternative libraries, it works offline, and is compatible
+  with both Python 2 and 3.
+- The OS module in python provides functions for interacting
+  with the operating system. OS, comes under Python's standard utility modules.
+  
+### Install Libraries
+
+- pip install pyttsx3 
+
+PS: OS library should be available before hand with python distribution.
+
+### Import Libraries
+
+- import pyttsx3
+- import os
+
+### Lets dive into the code
+
+#### engine = pyttsx3.init('sapi5')
+sapi5 is a referance to male voice for windows. Init() is a function to create an object 
+of pyttsx3 type.
+
+#### voices = engine.getProperty('voices')
+Gets the current value of an engine property.
+
+#### engine.setProperty('voice',voices[0].id)
+Queues a command to set an engine property. The new property value affects all utterances
+queued after this command.
+
+#### def speak(audio):
+         engine.say(audio)
+         engine.runAndWait()
+It is an user defined function. The pyttsx3 function say() pronounces the actual audio.
+The runAndWait() function blocks while processing all currently queued commands. 
+Invokes callbacks for engine notifications appropriately. 
+Returns when all commands queued before this call are emptied from the queue.
+  
+#### remember = open('input.txt','r')
+Here our text file is opened and stored in 'remember'
+
+#### speak(remember.read())
+Now finally we call our function.
+
+For the link to complete code and file click the link below:
+<a href="https://github.com/Py-geeks/Text-to-Speech-Module">Text-to-Speech-Module</a>
